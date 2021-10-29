@@ -12,23 +12,46 @@ body{
     /* flex-wrap: wrap; */
 }
 
+.boxes{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
 .plo-header {
     color:red;
     font-weight: 120;
     letter-spacing: 2px;
     text-decoration: none;
     background:rgba(255, 0, 0, 10);
-    padding: 25px;
+    padding: 10px;
     justify-content: flex-end;
     display: inline-flex;
-    width: 97.39%;
-    height: 80%;
+    width: 98.9%;
+    height: 50%;
     margin: 0%;
     align-items: flex-start;
     
 }
 ul{
     display: block;
+    background-color: red;
+    list-style-type: none;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.ul-button{
+    border: 0;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.ul-right{
+    display: block;
+    background-color: #f4f4f4;
     list-style-type: none;
     height: 100%;
     margin: 0%;
@@ -48,7 +71,7 @@ aside{
 }
 
 .aside-right{
-    background-color: #333;
+    background-color: #f4f4f4;
     color:white;
     display: list-item;
     flex-direction: column;
@@ -56,6 +79,9 @@ aside{
     float: right;
     width: 420px;
     border: black;
+}
+.p-right{
+    flex-direction: column;
 }
 
 li{
@@ -67,8 +93,8 @@ li{
     /* margin: 0 0 1px -1px; */
     transition: background-color .1s ease-in-out 0s;
     /* background: #e60012; */
-    border-color: white;
-    border: 1px;
+    border-color: black;
+    border: 10px;
     font-size: 90%;
     text-align: center;
     padding: 10px;
@@ -77,13 +103,15 @@ li{
 }
 
 .li-news{
-    width: auto;
-    min-height: 10px;
+    width: 90%;
+    min-height: 40px;
     background-color: white;
     color: #333;
-    border: 3px;
+    border-top: 5px;
+    justify-content: left;
     border-color: black;
-    margin-top: 0px;
+    margin-top: 5px;
+    margin-left: 10px;
     font-weight: 700;
 }
 
@@ -99,27 +127,34 @@ li{
 
 .li-right{
     /* background-color: whitesmoke; */
-    width: auto;
+    max-height: 210px;
     margin: 5px;
+    height: 150px;
+    /* align-content: flex-end; */
+    justify-content: right ;
     width: auto;
     border: black 5px;
     background-color: white;
     color: black;
     font-weight: 700;
-    position: relative;
+    max-width: 500px;
+    display: inline-flex;
 }
 
-/* p {
-    display: block;
+p {
+    display: flex;
+    flex-direction: column;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-} */
+    justify-content: center;
+
+}
 
 .button-nintendo{
     align-items: left;
-    margin-right: 1450px;
+    margin-right: 1462px;
     align-self: center;
     text-align: center;
     /* width: 100%; */
@@ -164,6 +199,7 @@ div{
     height: 80%;
     border: 0;
     margin: 5px;
+    flex-direction: row;
 }
 
 .img1{
@@ -200,11 +236,42 @@ div{
 .img4{
     display: flex;
     /* align-content: flex-end; */
+    /* border-radius: 5px;
+    margin-left: 5px; */
+    flex: auto;
+    box-sizing: border-box;
+    justify-self: auto;
+    align-items: auto;
+    width: 141.66px;
+    height: 141.66px;
+}
+.img5{
+    display: flex;
+    flex: auto;
+    /* align-content: flex-end; */
     border-radius: 5px;
     margin-left: 5px;
     box-sizing: border-box;
     justify-self: left;
     align-items: left;
+    width: 120px;
+    height: 40px;
+}
+
+.img6{
+    display: inline-block;
+    flex: auto;
+    /* align-content: flex-end; */
+    border-radius: 5px;
+    margin-left: 460px;
+    margin-top: 410px;
+    box-sizing: border-box;
+    justify-self: auto;
+    align-items: auto;
+    width: 925px;
+    height: 447.66px;
+}
+
+.img7{
     width: 50px;
-    height: 50px;
 }
